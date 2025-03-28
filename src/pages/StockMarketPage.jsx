@@ -1,5 +1,12 @@
+import React from 'react';
 import StockMarket from '../Components/stockmarket/StockMarket';
 
-export default function StockMarketPage() {
-  return <StockMarketPage />;
-}
+const StockMarketPage = () => {
+  return (
+    <div>
+      <StockMarket />
+    </div>
+  );
+};
+
+export default StockMarketPage;

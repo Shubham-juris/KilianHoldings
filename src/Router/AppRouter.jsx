@@ -5,8 +5,10 @@ import AccountBookPage from '../pages/AccountBookPage';
 import ContactUsPage from '../pages/ContactUsPage';
 import ClintPortal from '../pages/clintportal';
 import Blogs from '../pages/Blogs';
-import StockMarketPage from '../pages/StockMarketPage';
+
 import Services from '../pages/Services';
+import StockMarketPage from '../pages/StockMarketPage';
+import Careerpage from '../pages/Careerpage';
 
 export default function AppRouter() {
   return (
@@ -16,6 +18,7 @@ export default function AppRouter() {
       <Route path='/accountbook' element={<AccountBookPage />} />
       <Route path='/contactus' element={<ContactUsPage />} />
       <Route path='/stockmarket' element={<StockMarketPage />} />
+      <Route path='/careers' element={<Careerpage />} />
       <Route path='/clintportal' element={<ClintPortal />} />
       <Route path='/services' element={<Services />} />
       <Route path='/blogs' element={<Blogs />} />
