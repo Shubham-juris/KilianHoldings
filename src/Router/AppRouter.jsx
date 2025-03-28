@@ -3,12 +3,11 @@ import Home from '../pages/Home';
 import AboutUsPage from '../pages/AboutUsPage';
 import AccountBookPage from '../pages/AccountBookPage';
 import ContactUsPage from '../pages/ContactUsPage';
-import ClintPortal from '../pages/clintportal';
 import Blogs from '../pages/Blogs';
-
 import Services from '../pages/Services';
 import StockMarketPage from '../pages/StockMarketPage';
 import Careerpage from '../pages/Careerpage';
+import ClintPortal from '../pages/clintportal';
 
 export default function AppRouter() {
   return (
