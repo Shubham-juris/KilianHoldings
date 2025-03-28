@@ -6,6 +6,7 @@ import ContactUsPage from '../pages/ContactUsPage';
 import ClintPortal from '../pages/clintportal';
 import Blogs from '../pages/Blogs';
 import StockMarketPage from '../pages/StockMarketPage';
+import Services from '../pages/Services';
 
 export default function AppRouter() {
   return (
@@ -16,6 +17,7 @@ export default function AppRouter() {
       <Route path='/contactus' element={<ContactUsPage />} />
       <Route path='/stockmarket' element={<StockMarketPage />} />
       <Route path='/clintportal' element={<ClintPortal />} />
+      <Route path='/services' element={<Services />} />
       <Route path='/blogs' element={<Blogs />} />
     </Routes>
   );
