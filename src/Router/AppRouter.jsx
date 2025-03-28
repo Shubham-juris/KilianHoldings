@@ -7,7 +7,8 @@ import Blogs from '../pages/Blogs';
 import Services from '../pages/Services';
 import StockMarketPage from '../pages/StockMarketPage';
 import Careerpage from '../pages/Careerpage';
-import ClintPortal from '../pages/clintportal';
+
+import Clintportalpage from '../pages/Clintportalpage';
 
 export default function AppRouter() {
   return (
@@ -18,7 +19,7 @@ export default function AppRouter() {
       <Route path='/contactus' element={<ContactUsPage />} />
       <Route path='/stockmarket' element={<StockMarketPage />} />
       <Route path='/careers' element={<Careerpage />} />
-      <Route path='/clintportal' element={<ClintPortal />} />
+      <Route path='/clintportal' element={<Clintportalpage />} />
       <Route path='/services' element={<Services />} />
       <Route path='/blogs' element={<Blogs />} />
     </Routes>
