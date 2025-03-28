@@ -28,7 +28,7 @@ const Blogs = () => {
             Paralegals can provide legal services without a lawyer’s
             supervision. Independent paralegals have the freedom to make their
             own work hours, set their own fees, and choose their own clients.
-            They have flexibility that oth....
+            They have flexibility that oth...
           </p>
           {/* <a href="#" className="text-blue-600 hover:underline">
             Continue Reading
