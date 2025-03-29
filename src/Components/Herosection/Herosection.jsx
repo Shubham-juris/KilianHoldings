@@ -1,5 +1,6 @@
 import { Box, Button, Typography } from '@mui/material';
-import HeroImage from '../../assets/Herosection/HeroImage.webp';
+import HeroImage from '../../assets/Herosection/Heroimg.jpg';
+
 const Herosection = () => {
   return (
     <Box
@@ -8,8 +9,9 @@ const Herosection = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundImage: `url(${HeroImage})`,
+        backgroundImage: `linear-gradient(rgba(185, 185, 190, 0.5), rgba(23, 23, 252, 0.5)), url(${HeroImage})`,
         backgroundSize: 'cover',
+        backgroundColor: '#000',
         height: '800px',
       }}
     >
@@ -19,6 +21,7 @@ const Herosection = () => {
           width: '80%',
           display: 'flex',
           flexDirection: 'column',
+          textAlign: { xs: 'center', sm: 'left' },
         }}
       >
         <Typography
@@ -47,10 +50,13 @@ const Herosection = () => {
         </Typography>
         <Button
           sx={{
-            color: '#000000',
+            color: '#000',
             backgroundColor: '#fff',
             width: { xs: '80%', sm: '12%' },
             mt: 3,
+            '&:hover': {
+              backgroundColor: '#f0f0f0',
+            },
           }}
         >
           LEARN MORE

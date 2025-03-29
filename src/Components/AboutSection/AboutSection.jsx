@@ -1,5 +1,8 @@
-import AboutUs from '../../assets/About/AboutUs.jpg';
-import img from '../../assets/About/image.jpg';
+import AboutUs from '../../assets/About/AboutUs.webp';
+import Ourteam from '../../assets/Herosection/Ourteam.jpg';
+import personalized from '../../assets/Herosection/personalized.jpg';
+import ourclint from '../../assets/Herosection/ourclint.jpg';
+import getintouch from '../../assets/Herosection/getintouch.jpg';
 
 const AboutSection = () => {
   return (
@@ -30,7 +33,11 @@ const AboutSection = () => {
         className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 w-full justify-center items-center p-6 sm:p-12'
       >
         <div className='text-center w-full  sm:p-6  '>
-          <img className='w-150 h-[200px] mx-auto ' src={img} alt='Our Team' />
+          <img
+            className='w-150 h-[200px] mx-auto '
+            src={Ourteam}
+            alt='Our Team'
+          />
           <h4 className='text-xl text-gray-100 font-bold mt-4'>Our Team</h4>
           <p className='text-gray-100 mt-2 text-xs px-6'>
             At Kilian Holdings, our team is comprised of highly skilled and
@@ -44,7 +51,7 @@ const AboutSection = () => {
         <div className='text-center w-full p-4 sm:p-6  '>
           <img
             className='w-150 h-[200px] mx-auto '
-            src={img}
+            src={personalized}
             alt='Personalized Attention'
           />
           <h4 className='text-xl text-gray-100 font-bold mt-4'>
@@ -61,7 +68,11 @@ const AboutSection = () => {
         </div>
 
         <div className='text-center w-full p-4 sm:p-6  '>
-          <img className='w-150 h-[200px] mx-auto ' src={img} alt='Our Team' />
+          <img
+            className='w-150 h-[200px] mx-auto '
+            src={ourclint}
+            alt='Our Team'
+          />
           <h4 className='text-xl text-gray-100 font-bold mt-4'>Our Team</h4>
           <p className='text-gray-100 mt-2 text-xs px-6'>
             At Kilian Holdings, our team is comprised of highly skilled and
@@ -73,7 +84,11 @@ const AboutSection = () => {
           </p>
         </div>
         <div className='text-center w-full p-4 sm:p-6  '>
-          <img className='w-150 h-[200px] mx-auto ' src={img} alt='Our Team' />
+          <img
+            className='w-150 h-[200px] mx-auto '
+            src={getintouch}
+            alt='Our Team'
+          />
           <h4 className='text-xl text-gray-100 font-bold mt-4'>Our Team</h4>
           <p className='text-gray-100 mt-2 text-xs px-6'>
             At Kilian Holdings, our team is comprised of highly skilled and

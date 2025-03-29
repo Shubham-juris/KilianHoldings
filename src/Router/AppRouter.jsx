@@ -4,11 +4,11 @@ import AboutUsPage from '../pages/AboutUsPage';
 import AccountBookPage from '../pages/AccountBookPage';
 import ContactUsPage from '../pages/ContactUsPage';
 import Blogs from '../pages/Blogs';
-import Services from '../pages/Services';
 import StockMarketPage from '../pages/StockMarketPage';
 import Careerpage from '../pages/Careerpage';
 
 import Clintportalpage from '../pages/Clintportalpage';
+import ServicePage from '../pages/ServicePage';
 
 export default function AppRouter() {
   return (
@@ -20,7 +20,7 @@ export default function AppRouter() {
       <Route path='/stockmarket' element={<StockMarketPage />} />
       <Route path='/careers' element={<Careerpage />} />
       <Route path='/clintportal' element={<Clintportalpage />} />
-      <Route path='/services' element={<Services />} />
+      <Route path='/services' element={<ServicePage />} />
       <Route path='/blogs' element={<Blogs />} />
     </Routes>
   );
