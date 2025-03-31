@@ -9,7 +9,7 @@ const Herosection = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundImage: `linear-gradient(rgba(185, 185, 190, 0.5), rgba(23, 23, 252, 0.5)), url(${HeroImage})`,
+        backgroundImage: `linear-gradient(rgba(12, 63, 64, 0.3), rgba(12, 63, 64, 0.3)), url(${HeroImage})`,
         backgroundSize: 'cover',
         backgroundColor: '#000',
         height: '800px',
