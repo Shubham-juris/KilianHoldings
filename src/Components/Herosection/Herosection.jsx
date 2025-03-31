@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from '@mui/material';
 import HeroImage from '../../assets/Herosection/Heroimg.jpg';
-
+ 
 const Herosection = () => {
   return (
     <Box
@@ -65,5 +65,5 @@ const Herosection = () => {
     </Box>
   );
 };
-
+ 
 export default Herosection;

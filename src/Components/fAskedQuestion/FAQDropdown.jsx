@@ -40,16 +40,42 @@ const FAQDropdown = () => {
 
   return (
     <div
-      style={{ margin: "1rem auto" }}
+      style={{
+        margin: "1rem auto",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
       className="w-full max-w-2xl mx-auto p-4"
     >
+      <h1
+        className="text-[#0C3F40] text-3xl text-center"
+        style={{ marginTop: "1em", marginBottom: "0.5em" }}
+      >
+        <b>Frequently Asked Questions</b>
+      </h1>
+      <p className="text-center" style={{ marginBottom: "2.5em" }}>
+        Please reach us at it you cannot find an answer to your question.
+      </p>
       {faqs.map((faq, index) => (
-        <div key={index} className="border-b last:border-b-0 border-gray-200">
+        <div
+          key={index}
+          className={`border-b last:border-b-0 border-gray-200 w-[60em] ${
+            openDropdown === index ? "mb-4" : ""
+          }`}
+        >
           <button
             onClick={() => toggleDropdown(index)}
-            className="w-full flex justify-between items-center p-4 text-left hover:bg-gray-50 transition-colors"
+            className="w-full flex justify-between items-center text-left hover:bg-gray-50 transition-colors"
+            style={{ padding: "1em" }}
           >
-            <span className="font-semibold text-gray-800">{faq.question}</span>
+            <span
+              className="font-semibold text-gray-800 text-[1.2em]"
+              style={{ marginBottom: "10px" }}
+            >
+              {faq.question}
+            </span>
             {openDropdown === index ? (
               <ChevronUp className="text-gray-500" />
             ) : (
@@ -57,7 +83,16 @@ const FAQDropdown = () => {
             )}
           </button>
           {openDropdown === index && (
-            <div className="p-4 bg-gray-50 text-gray-700">{faq.answer}</div>
+            <div
+              className="p-4 bg-gray-50 text-gray-700 relative left-6"
+              style={{
+                marginBottom: "1em",
+                width: "90%",
+                transition: "width 0.3s ease",
+              }}
+            >
+              {faq.answer}
+            </div>
           )}
         </div>
       ))}
