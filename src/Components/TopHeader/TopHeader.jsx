@@ -15,7 +15,7 @@ const TopHeader = () => {
       <Typography
         sx={{
           padding: 1,
-          fontSize: { xs: '14px', sm: '20px', md: '24px' },
+          fontSize: { xs: '10px', sm: '13px', md: '14px' },
           color: '#fff',
           textAlign: 'center',
         }}

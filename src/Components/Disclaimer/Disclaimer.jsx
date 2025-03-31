@@ -11,12 +11,12 @@ const Disclaimer = () => {
     "The information on this site is not intended to be a substitute for professional advice. Always seek the advice of a qualified professional regarding any legal, financial, or health-related concerns. Never disregard professional advice because of something you have read on this website.";
 
   return (
+    <div className="bg-blue-50 h-[750px]">
     <div
-      style={{ textAlign: "left", margin: "0 auto" }}
-      className="w-[80%] md:w-[70%] mx-auto flex flex-col items-center"
+      className="w-[60%] mx-auto flex flex-col justify-self-center"
     >
-      <h2 className="text-stone-600 text-left text-[2.5rem] font-semibold">
-        Legal Disclaimer
+      <h2 className="text-[#0C3F40] text-left text-[2.5rem] font-semiboldr relative left-5" style={{marginBottom:"1em" , marginTop:"1em"}}>
+       <b>Disclaimer</b>
       </h2>
       <div className="text-stone-600 text-[1.125rem] font-semilight p-2 text-left">
         <DisP text={str1} />
@@ -24,6 +24,8 @@ const Disclaimer = () => {
         <DisP text={str3} />
         <DisP text={str4} />
       </div>
+      <h3 className="underline relative left-3.5" style={{marginTop:"2em"}}>LEARN MORE</h3>
+    </div>
     </div>
   );
 };
