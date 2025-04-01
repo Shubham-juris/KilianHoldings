@@ -8,18 +8,18 @@ const FAQDropdown = () => {
     {
       question: "What types of services does Kilian Holdings offer?",
       answer:
-        "Kilian Holdings provides comprehensive legal services including corporate law, intellectual property protection, contract drafting, and litigation support.",
+        "Kilian Holdings provides comprehensive paralegal services including corporate law, intellectual property protection, contract drafting, and litigation support.",
     },
     {
       question: "How experienced is the team at Kilian Holdings?",
       answer:
-        "Our team consists of seasoned legal professionals with over 50 years of combined experience across various legal domains, ensuring expert guidance for our clients.",
+        "Our team consists of seasoned paralegal professionals with over 50 years of combined experience across various paralegal domains, ensuring expert guidance for our clients.",
     },
     {
       question:
-        "What sets Kilian Holdings apart from other legal service providers?",
+        "What sets Kilian Holdings apart from other paralegal service providers?",
       answer:
-        "We distinguish ourselves through personalized client approach, cutting-edge legal strategies, transparent communication, and a proven track record of successful outcomes.",
+        "We distinguish ourselves through personalized client approach, cutting-edge paralegal strategies, transparent communication, and a proven track record of successful outcomes.",
     },
     {
       question: "How much do Kilian Holdings' services cost?",
@@ -28,9 +28,9 @@ const FAQDropdown = () => {
     },
     {
       question:
-        "Is the information provided on Kilian Holdings' website considered legal advice?",
+        "Is the information provided on Kilian Holdings' website considered paralegal advice?",
       answer:
-        "No, the website content is for informational purposes only and does not constitute formal legal advice. Consulting directly with our attorneys is recommended for specific legal guidance.",
+        "No, the website content is for informational purposes only and does not constitute formal paralegal advice. Consulting directly with our attorneys is recommended for specific paralegal guidance.",
     },
   ];
 
@@ -61,7 +61,7 @@ const FAQDropdown = () => {
       {faqs.map((faq, index) => (
         <div
           key={index}
-          className={`border-b last:border-b-0 border-gray-200 w-[60em] ${
+          className={`border-b last:border-b-0 border-gray-200 w-full sm:w-[90%] lg:w-[60em] ${
             openDropdown === index ? "mb-4" : ""
           }`}
         >
@@ -71,7 +71,7 @@ const FAQDropdown = () => {
             style={{ padding: "1em" }}
           >
             <span
-              className="font-semibold text-gray-800 text-[1.2em]"
+              className="font-semibold text-gray-800 text-[1em] sm:text-[1.1em] lg:text-[1.2em]"
               style={{ marginBottom: "10px" }}
             >
               {faq.question}
@@ -84,10 +84,10 @@ const FAQDropdown = () => {
           </button>
           {openDropdown === index && (
             <div
-              className="p-4 bg-gray-50 text-gray-700 relative left-6"
+              className="p-4 bg-gray-50 text-gray-700 relative sm:left-4 lg:left-6"
               style={{
                 marginBottom: "1em",
-                width: "90%",
+                width: "95%",
                 transition: "width 0.3s ease",
               }}
             >

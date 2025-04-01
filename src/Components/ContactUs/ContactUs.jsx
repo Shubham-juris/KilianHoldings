@@ -1,49 +1,49 @@
-import { useEffect, useState } from 'react';
-import {
-  Box,
-  Typography,
-  TextField,
-  Button,
-  Card,
-  CardContent,
-  Fade,
-} from '@mui/material';
-import Grid from '@mui/material/Grid';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import PhoneIcon from '@mui/icons-material/Phone';
-import EmailIcon from '@mui/icons-material/Email';
+// import { useEffect, useState } from 'react';
+// import {
+//   Box,
+//   Typography,
+//   TextField,
+//   Button,
+//   Card,
+//   CardContent,
+//   Fade,
+// } from '@mui/material';
+// import Grid from '@mui/material/Grid';
+// import LocationOnIcon from '@mui/icons-material/LocationOn';
+// import PhoneIcon from '@mui/icons-material/Phone';
+// import EmailIcon from '@mui/icons-material/Email';
 // import AOS from "aos";
 // import "aos/dist/aos.css";
 
-import contactImage from '../../assets/ContactUs/image.png';
+// import contactImage from '../../assets/ContactUs/image.png';
 
 const ContactUs = () => {
   // useEffect(() => {
   //   AOS.init({ duration: 1200, once: false, mirror: true });
   // }, []);
 
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   message: '',
+  // });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prevData) => ({
+  //     ...prevData,
+  //     [name]: value,
+  //   }));
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Form submitted! (EmailJS is commented out)');
-    setFormData({ name: '', email: '', message: '' });
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   alert('Form submitted! (EmailJS is commented out)');
+  //   setFormData({ name: '', email: '', message: '' });
+  // };
 
-  const contactInfoText =
-    'At Kilian Holdings, we understand that navigating the legal landscape can be daunting.';
+  // const contactInfoText =
+  //   'At Kilian Holdings, we understand that navigating the paralegal landscape can be daunting.';
 
   return (
     <>
