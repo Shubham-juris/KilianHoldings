@@ -1,14 +1,12 @@
 // import accountBookImg from "../../assets/AccountingBook/accountBook.jpg"; 
 function Account_Book() {
   return (
-    <>
-      {/* upper part */}
+    <>      {/* upper part */}
       <div
         className=""
         style={{
           marginTop: "1.5rem",
-          paddingLeft: "4rem",
-          paddingRight: "4rem",
+          padding: "0 2rem",
         }}
       >
         <h1
@@ -18,8 +16,14 @@ function Account_Book() {
           Welcome to Kilianholding Accounting and Bookkeeping Services
         </h1>
 
-        <div className="flex justify-between">
-          <div className="leftinfo w-[65%]">
+        <div
+          className="flex flex-wrap justify-between"
+          style={{ gap: "2rem" }}
+        >
+          <div
+            className="leftinfo w-full md:w-[65%]"
+            style={{ marginBottom: "2rem" }}
+          >
             <h2
               className="text-2xl font-normal"
               style={{ marginBottom: "2rem" }}
@@ -50,7 +54,10 @@ function Account_Book() {
             </p>
           </div>
 
-          <div className="right_img  min-w-[200px] max-w-[27%]">
+          <div
+            className="right_img w-full md:min-w-[200px] md:max-w-[27%]"
+            style={{ marginBottom: "2rem" }}
+          >
             <img
               className="w-full"
               src="../../src/assets/AccountingBook/accountBook.jpg"
@@ -64,22 +71,34 @@ function Account_Book() {
 
       <div
         className="bg-[#0C3F40] w-full text-white"
-        style={{ padding: "4rem 6rem" }}
+        style={{ padding: "4rem 2rem" }}
       >
-        <h1 className="text-center text-4xl font-medium">
+        <h1
+          className="text-center text-4xl font-medium"
+          style={{ marginBottom: "2rem" }}
+        >
           Key Aspects of Accounting and Bookkeeping
         </h1>
 
         <div>
-          <div className="flex gap-20" style={{ marginTop: "4rem" }}>
-            <div className=" border-white w-[333px]">
+          <div
+            className="flex flex-wrap gap-10 justify-center"
+            style={{ marginTop: "4rem" }}
+          >
+            <div
+              className="border-white w-full md:w-[333px]"
+              style={{ marginBottom: "2rem" }}
+            >
               <h1 className="text-2xl text-center">Record-Keeping</h1>
               <img
                 className="w-full object-cover"
                 src="../../src/assets/AccountingBook/recordKeep.jpg"
                 style={{ marginTop: "1.8rem", height: "210px" }}
               />
-              <p className="text-center" style={{ padding: "1.5rem 1rem" }}>
+              <p
+                className="text-center"
+                style={{ padding: "1.5rem 1rem" }}
+              >
                 Accountants and bookkeepers maintain detailed records of all
                 financial transactions, including sales, purchases, expenses,
                 and payments. This meticulous record-keeping provides a clear
@@ -87,14 +106,20 @@ function Account_Book() {
               </p>
             </div>
 
-            <div className=" border-white w-[333px]">
+            <div
+              className="border-white w-full md:w-[333px]"
+              style={{ marginBottom: "2rem" }}
+            >
               <h1 className="text-2xl text-center">Financial Reporting</h1>
               <img
                 className="w-full object-cover"
                 src="../../src/assets/AccountingBook/finance_report.jpg"
                 style={{ marginTop: "1.8rem", height: "210px" }}
               />
-              <p className="text-center" style={{ padding: "1.5rem 1rem" }}>
+              <p
+                className="text-center"
+                style={{ padding: "1.5rem 1rem" }}
+              >
                 Through the preparation of financial statements such as balance
                 sheets, income statements, and cash flow statements, accounting
                 professionals offer valuable insights into a companys
@@ -104,7 +129,10 @@ function Account_Book() {
               </p>
             </div>
 
-            <div className=" border-white w-[333px]">
+            <div
+              className="border-white w-full md:w-[333px]"
+              style={{ marginBottom: "2rem" }}
+            >
               <h1 className="text-2xl text-center">
                 Budgeting and Forecasting
               </h1>
@@ -113,7 +141,10 @@ function Account_Book() {
                 src="../../src/assets/AccountingBook/forecasting.jpg"
                 style={{ marginTop: "1.8rem", height: "210px" }}
               />
-              <p className="text-center" style={{ padding: "1.5rem 1rem" }}>
+              <p
+                className="text-center"
+                style={{ padding: "1.5rem 1rem" }}
+              >
                 Accounting and bookkeeping professionals assist businesses in
                 creating budgets and financial forecasts to plan and manage
                 finances effectively. By analyzing historical data and
@@ -124,17 +155,23 @@ function Account_Book() {
           </div>
 
           <div
-            className="flex  justify-center gap-20"
+            className="flex flex-wrap justify-center gap-10"
             style={{ margin: "1rem" }}
           >
-            <div className=" border-white w-[333px]">
+            <div
+              className="border-white w-full md:w-[333px]"
+              style={{ marginBottom: "2rem" }}
+            >
               <h1 className="text-2xl text-center">Tax Compliance</h1>
               <img
                 className="w-full object-cover"
                 src="../../src/assets/AccountingBook/online-tax.jpg"
                 style={{ marginTop: "1.8rem", height: "210px" }}
               />
-              <p className="text-center" style={{ padding: "1.5rem 1rem" }}>
+              <p
+                className="text-center"
+                style={{ padding: "1.5rem 1rem" }}
+              >
                 Tax preparation is a crucial aspect of accounting and
                 bookkeeping services. Professionals ensure compliance with tax
                 laws and regulations by accurately calculating taxes owed,
@@ -143,14 +180,20 @@ function Account_Book() {
               </p>
             </div>
 
-            <div className=" border-white w-[333px]">
+            <div
+              className="border-white w-full md:w-[333px]"
+              style={{ marginBottom: "2rem" }}
+            >
               <h1 className="text-2xl text-center">Financial Analysis</h1>
               <img
                 className="w-full object-cover"
                 src="../../src/assets/AccountingBook/analysis.jpg"
                 style={{ marginTop: "1.8rem", height: "210px" }}
               />
-              <p className="text-center" style={{ padding: "1.5rem 1rem" }}>
+              <p
+                className="text-center"
+                style={{ padding: "1.5rem 1rem" }}
+              >
                 Accountants and bookkeepers analyze financial data to assess
                 performance, identify trends, and evaluate the effectiveness of
                 business strategies. Through financial analysis, companies can

@@ -17,7 +17,7 @@ const Services = () => {
       title: 'Paralegal',
       image: paralegalImg,
       description:
-        'When you need legal services, you don’t always need a lawyer. We are professionally trained to understand all aspects of the law and legal procedures. That being said, however, Kilian holdings Ltd as a paralegal firm cannot provide you legal advice we can provide you with our practical experience and knowledge gained throughout our years of experience. In  any situation where legal advice is required. we are happy to refer you to our network of lawyers.',
+        'When you need paralegal services, you don’t always need a lawyer. We are professionally trained to understand all aspects of the law and paralegal procedures. That being said, however, Kilian holdings Ltd as a paralegal firm cannot provide you paralegal advice we can provide you with our practical experience and knowledge gained throughout our years of experience. In  any situation where paralegal advice is required. we are happy to refer you to our network of lawyers.',
     },
     {
       title: 'Private Investigation',
@@ -108,7 +108,7 @@ const Services = () => {
 
   return (
     <div
-      className='max-w-full mx-auto py-10 px-4 text-center'
+      className='max-w-full mx-auto py-10 px-4 text-center sm:w-[100%]'
       style={{ paddingInline: '80px', padding: '32px' }}
     >
       <h2
@@ -117,7 +117,7 @@ const Services = () => {
       >
         Consulting Services for Small Businesses
       </h2>
-      <div className='grid md:grid-cols-3 gap-'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
         {services.map((service, index) => (
           <div className='p-6' style={{ padding: '40px' }} key={index}>
             <h3
@@ -129,11 +129,10 @@ const Services = () => {
             <img
               src={service.image}
               alt={services.title}
-              className='w-full h-48 object-fit mb-4'
+              className='w-full h-48 object-cover mb-4'
               style={{ marginBottom: '32px' }}
             />
-
-            <p className='text-gray-700 text-base'>{service.description}</p>
+            <p className='text-gray-700 text-base '>{service.description}</p>
           </div>
         ))}
       </div>

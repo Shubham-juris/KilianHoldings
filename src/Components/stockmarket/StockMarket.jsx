@@ -1,6 +1,6 @@
 export default function StockMarket() {
   return (
-    <div style={{ margin: '0 auto' }} className=' text-white'>
+    <div style={{ margin: '0 auto' }} className='text-white'>
       <div
         style={{
           padding: '2rem',
@@ -12,12 +12,12 @@ export default function StockMarket() {
       >
         <div className='md:w-1/2 text-center md:text-left'>
           <h2
-            className='text-3xl md:text-5xl font-bold '
+            className='text-3xl md:text-5xl font-bold'
             style={{ marginBottom: '2rem', color: 'green' }}
           >
             Welcome to Kilian Holdings Ltd - Your Gateway to the Stock Market
           </h2>
-          <p className='mt-4 text-lg text-gray-700 '>
+          <p className='mt-4 text-lg text-gray-700'>
             At Kilian Holdings Ltd, we understand that the stock market can be
             both an exciting and daunting place. Whether you are a seasoned
             investor or just starting your financial journey, we are here to
@@ -30,7 +30,7 @@ export default function StockMarket() {
             src='../src/assets/stockmarket/stock-market-img.avif'
             alt='Stock Market'
             className='w-full max-w-md h-auto rounded-lg shadow-lg'
-            style={{ height: '90vh', width: '100vh' }}
+            style={{ maxHeight: '90vh', width: '100%' }}
           />
         </div>
       </div>
@@ -56,7 +56,7 @@ export default function StockMarket() {
                 What is the Stock Market?
               </h3>
               <p
-                className='text-gray-700 mt-2 text-white'
+                className='text-gray-300 mt-2'
                 style={{ maxWidth: '90%', padding: '2rem' }}
               >
                 The stock market is a vast network where investors buy and sell
@@ -83,7 +83,7 @@ export default function StockMarket() {
                 Why Invest in Stocks?
               </h3>
               <ul
-                className='text-gray-700 mt-2 list-disc list-inside text-white'
+                className='text-gray-300 mt-2 list-inside'
                 style={{ maxWidth: '90%', padding: '2rem' }}
               >
                 <li>
