@@ -22,7 +22,7 @@ return (
             <img
                 src= {image}
                 alt='Paralegal'
-                className='w-full md:w-24 h-24 object-cover rounded'
+                className='w-full md:w-[600px] h-full object-cover rounded'
             />
             <div className='flex flex-col gap-2'>
                 <p className='text-sm text-gray-500'>October 22, 2023</p>

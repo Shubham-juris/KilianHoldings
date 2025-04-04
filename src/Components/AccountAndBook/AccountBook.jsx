@@ -1,11 +1,11 @@
 
 import React from "react";
 import AccountImg from "../../assets/AccountingBook/accountBook.jpg";
-import RecordImg from "../../assets/AccountingBook/record.jpg";
-import FinancialImg from "../../assets/AccountingBook/financial.jpg";
-import BudgetingImg from "../../assets/AccountingBook/budgeting.jpg";
-import TaxImg from "../../assets/AccountingBook/tax.jpg";
-import FinancialAnalysisImg from "../../assets/AccountingBook/financialAnalysis.jpg";
+import RecordImg from "../../assets/AccountingBook/recordKeep.jpg";
+import FinancialImg from "../../assets/AccountingBook/finance_report.jpg";
+import BudgetingImg from "../../assets/AccountingBook/analysis.jpg";
+import TaxImg from "../../assets/AccountingBook/online-tax.jpg";
+import FinancialAnalysisImg from "../../assets/AccountingBook/forecasting.jpg";
 
 
 function AccountBook() {

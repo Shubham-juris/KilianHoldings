@@ -10,14 +10,14 @@ import fraudImg from '../../assets/Services/fraud.jpg';
 import recklessDrivingImg from '../../assets/Services/recklessDriving.jpg';
 import assaultImg from '../../assets/Services/assault.jpg';
 import drugOffensesImg from '../../assets/Services/drugOffenses.jpg';
-
+// That being said, however, Kilian holdings Ltd as a paralegal firm cannot provide you paralegal advice we can provide you with our practical experience and knowledge gained throughout our years of experience. In  any situation where paralegal advice is required. we are happy to refer you to our network of lawyers.
 const Services = () => {
   const services = [
     {
       title: 'Paralegal',
       image: paralegalImg,
       description:
-        'When you need paralegal services, you don’t always need a lawyer. We are professionally trained to understand all aspects of the law and paralegal procedures. That being said, however, Kilian holdings Ltd as a paralegal firm cannot provide you paralegal advice we can provide you with our practical experience and knowledge gained throughout our years of experience. In  any situation where paralegal advice is required. we are happy to refer you to our network of lawyers.',
+        'When you need paralegal services, you don’t always need a lawyer. We are professionally trained to understand all aspects of the law and paralegal procedures. ',
     },
     {
       title: 'Private Investigation',
