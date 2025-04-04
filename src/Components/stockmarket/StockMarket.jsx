@@ -34,7 +34,7 @@ export default function StockMarket() {
           <img
             src= {StockMarketImage}
             alt='Stock Market'
-            className='w-full max-w-md h-auto rounded-lg shadow-lg'
+            className='w-full max-w-md h-auto  shadow-lg'
             style={{ maxHeight: '90vh', width: '100%' }}
           />
         </div>

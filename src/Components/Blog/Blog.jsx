@@ -1,6 +1,6 @@
 import React from 'react'
 import image from '../../assets/Blogs/HeroImage.jpg'
-import paralegal from '../../assets/Blogs/HeroImagecopy.jpg'
+// import paralegal from '../../assets/Blogs/HeroImagecopy.jpg'
 import fight from '../../assets/Blogs/MeetingImage.jpg'
 
 const Blog = () => {
