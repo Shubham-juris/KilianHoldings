@@ -35,7 +35,7 @@ return (
                 </p>
             </div>
         </div>
-        <div
+        {/* <div
             className='flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 gap-10 w-full'
             style={{ padding: '50px' }}
         >
@@ -54,7 +54,7 @@ return (
                     They have flexibility that oth...
                 </p>
             </div>
-        </div>
+        </div> */}
         <div
             className='bg-teal-900 p-6 text-white flex flex-col md:flex-row items-center md:space-x-6 gap-6'
             style={{
