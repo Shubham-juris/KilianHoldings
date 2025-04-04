@@ -1,181 +1,131 @@
-// import { useEffect, useState } from 'react';
-// import {
-//   Box,
-//   Typography,
-//   TextField,
-//   Button,
-//   Card,
-//   CardContent,
-//   Fade,
-// } from '@mui/material';
-// import Grid from '@mui/material/Grid';
-// import LocationOnIcon from '@mui/icons-material/LocationOn';
-// import PhoneIcon from '@mui/icons-material/Phone';
-// import EmailIcon from '@mui/icons-material/Email';
-// import AOS from "aos";
-// import "aos/dist/aos.css";
+import React, { useState } from "react";
+import { TextField, Button, Typography, Box } from "@mui/material";
 
-// import contactImage from '../../assets/ContactUs/image.png';
+const MainContactUs = () => {
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
-const ContactUs = () => {
-  // useEffect(() => {
-  //   AOS.init({ duration: 1200, once: false, mirror: true });
-  // }, []);
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
-  // const [formData, setFormData] = useState({
-  //   name: '',
-  //   email: '',
-  //   message: '',
-  // });
-
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setFormData((prevData) => ({
-  //     ...prevData,
-  //     [name]: value,
-  //   }));
-  // };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   alert('Form submitted! (EmailJS is commented out)');
-  //   setFormData({ name: '', email: '', message: '' });
-  // };
-
-  // const contactInfoText =
-  //   'At Kilian Holdings, we understand that navigating the paralegal landscape can be daunting.';
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form Data Submitted:", formData);
+  };
 
   return (
-    <>
-      <div>
-        <h1
-          className='text-center text-[2em]'
-          style={{ color: '#0C3F40', marginBottom: '2.7em' }}
+    <Box sx={{ mt: "5rem", p: 4, maxWidth: 1200, mx: "auto", textAlign: "center" }}>
+      <Box
+        sx={{ display: "flex", alignItems: "center", justifyContent: "center", mb: 2 }}
+      >
+        <Box sx={{ flexGrow: 1, height: "2px", bgcolor: "#8B8B5E" }} />
+        <Typography
+          variant="h4"
+          sx={{ fontWeight: "bold", color: "#8B8B5E", mx: 2, textAlign: "center" }}
         >
-          <b>ContactUs</b>
-        </h1>
-      </div>
-      <div className='flex gap-20 w-full h-screen justify-center'>
-        <div className='  h-screen'>
-          <h1 className='text-[22px]' style={{ marginBottom: '15px' }}>
+          CONTACT US
+        </Typography>
+        <Box sx={{ flexGrow: 1, height: "2px", bgcolor: "#8B8B5E" }} />
+      </Box>
+
+      {/* Main Content */}
+      <Box sx={{ display: "flex", flexDirection: { xs: "column", md: "row" }, gap: 4, p: 4 }}>
+        {/* Contact Form */}
+        <Box sx={{ flex: 1 }}>
+          <Typography variant="h6" align="left" sx={{ color: "#000" }}>
             Drop us a line!
-          </h1>
-          <form className='max-w-md w-full space-y-6 p-6 bg-white'>
-            {/* Name Input */}
-            <div className='flex flex-col' style={{ marginBottom: '25px' }}>
-              <label
-                htmlFor='name'
-                className='text-sm font-medium text-gray-700'
-              >
-                Name
-              </label>
-              <input
-                type='text'
-                id='name'
-                name='name'
-                className='mt-1 p-2 w-full border-b-1 rounded '
+          </Typography>
+          <Box sx={{ p: 3, backgroundColor: "#f9f9f9", border: "1px solid #ddd" }}>
+            <form onSubmit={handleSubmit}>
+              <TextField
+                fullWidth
+                label="Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                margin="normal"
+                variant="outlined"
               />
-            </div>
-
-            {/* Email Input */}
-            <div className='flex flex-col' style={{ marginBottom: '25px' }}>
-              <label
-                htmlFor='email'
-                className='text-sm font-medium text-gray-700'
-              >
-                Email *
-              </label>
-              <input
-                type='email'
-                id='email'
-                name='email'
-                className='mt-1 p-2 w-full border-b-1 rounded '
+              <TextField
+                fullWidth
+                label="Email *"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                margin="normal"
+                required
+                variant="outlined"
               />
-            </div>
-
-            {/* Message Input */}
-            <div className='flex flex-col' style={{ marginBottom: '25px' }}>
-              <label
-                htmlFor='message'
-                className='text-sm font-medium text-gray-700'
-              >
-                Message
-              </label>
-              <textarea
-                id='message'
-                name='message'
-                className='mt-1 p-2 w-full border-b-1 rounded h-[5.8em]'
+              <TextField
+                fullWidth
+                label="Message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                margin="normal"
+                multiline
+                rows={4}
+                variant="outlined"
               />
-            </div>
+              <Button
+                variant="contained"
+                fullWidth
+                sx={{
+                  mt: 2,
+                  backgroundColor: "#d4d19c",
+                  color: "black",
+                  fontWeight: "bold",
+                  borderRadius: "20px",
+                }}
+                type="submit"
+              >
+                SEND
+              </Button>
+            </form>
+          </Box>
+        </Box>
 
-            {/* File Attachment (UI Only) */}
-            <div className='flex justify-between items-center  p-2  cursor-pointer'>
-              <span className='text-gray-600'>📎 Attach Files</span>
-              <span className='text-gray-400'>Attachments (0)</span>
-            </div>
+       
+        <Box sx={{ flex: 1, textAlign: "left", p: 4, minWidth:"270px", position:"relative" , right:"24px" }}>
+          <Typography variant="h6" sx={{ color: "#000" }}>
+            Better yet, see us in person!
+          </Typography>
+          <Typography variant="body2" sx={{ mb: 2 }}>
+            We love our customers, so feel free to visit during normal business hours.
+          </Typography>
+          <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+            Kilian Holdings Ltd
+          </Typography>
+          <Typography variant="body2">
+            4804 42 Ave, Innisfail, Alberta T4G 1N4, Canada
+          </Typography>
+          <Typography variant="body2">
+            #3 5105 51 Ave Drayton Valley, Alberta T7A 0C3
+          </Typography>
+          <Typography variant="body2">
+            Unit 215, 321 Main Street Northeast, Slave lake TOG 2A0
+          </Typography>
+          <Typography variant="body2">
+            5009D, 51Street, Barhead, T7N 1L1
+          </Typography>
+          <Typography variant="body2">
+            Toll free number: 1-833-215-9686
+          </Typography>
+          <Typography variant="body2">
+            Email: kilianholdingltd@gmail.com
+          </Typography>
+          <Typography variant="h6" sx={{ mt: 2, fontWeight: "bold" }}>
+            Hours
+          </Typography>
+        </Box>
+      </Box>
 
-            {/* Submit Button */}
-            <button
-              type='button'
-              className='w-20 text-[13px] bg-black text-white  rounded hover:bg-stone-800 transition relative left-[13em] top-5'
-              style={{ padding: '0.9em' }}
-            >
-              SEND
-            </button>
-          </form>
-          <div style={{ marginTop: '25px' }}>
-            <p
-              className='text-stone-400 text-[12px]'
-              style={{ color: '#0C3F40' }}
-            >
-              This site is protected by reCAPRCHAN and the Google Private Policy
-              and Terms of Service apply
-            </p>
-          </div>
-        </div>
 
-        <div>
-          <h2 className='text-[24px]' style={{ marginBottom: '18px' }}>
-            Better yet, see us in person!{' '}
-          </h2>
-          <p style={{ marginBottom: '20px' }}>
-            We love our customers, so feel free to visit during normal business
-            hours.{' '}
-          </p>
-          <h2 className='text-[24px]' style={{ marginBottom: '20px' }}>
-            Kilian Holdings Ltd{' '}
-          </h2>
-          <p style={{ marginBottom: '18px' }}>
-            4804 42 Ave, Innisfail, Alberta T4G 1N4, Canada{' '}
-          </p>
-          <p style={{ marginBottom: '18px' }}>
-            <span style={{ color: '#0C3F40' }}>#3 5105 51 </span>Ave Drayton
-            Valley, Alberta <br />
-            T7A 0C3{' '}
-          </p>
-          <p style={{ marginBottom: '18px' }}>
-            Unit <span style={{ color: '#0C3F40' }}> 215, 321</span> Main Street
-            Northeast, Slave lake TOG 2A0{' '}
-          </p>
-          <p style={{ marginBottom: '18px' }}>
-            <span style={{ color: '#0C3F40' }}>5009D</span>, 51Street, Barhead,
-            T7N 1L1{' '}
-          </p>
-          <p style={{ marginBottom: '18px' }}>
-            Toll free number:
-            <span style={{ color: '#0C3F40' }}> 1-833-215-9686 </span>
-          </p>
-          <span style={{ marginBottom: '18px' }}>Email</span>
-          <p style={{ marginBottom: '18px', color: '#0C3F40' }}>
-            kilianholdingltd@gmail.com{' '}
-          </p>
-          <p className='text-[24px]' style={{ marginBottom: '18px' }}>
-            Hours{' '}
-          </p>
-        </div>
-      </div>
-    </>
+      <Typography variant="caption" sx={{ mt: 3, color: "#777" }}>
+        This site is protected by reCAPRCHAN and the Google Private Policy and Terms of Service apply
+      </Typography>
+    </Box>
   );
 };
 
-export default ContactUs;
+export default MainContactUs;

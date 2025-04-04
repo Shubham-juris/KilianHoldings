@@ -88,7 +88,7 @@ const Footer = () => {
         </Box>
 
         {/* Social Media */}
-        <Box sx={{ flex: 1, textAlign: { xs: "left", md: "center" } }}>
+        <Box sx={{ flex: 1, textAlign: { xs: "left", md: "center" } }}> 
           <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2 }}>
             Follow Us
           </Typography>
