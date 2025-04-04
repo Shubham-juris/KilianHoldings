@@ -1,4 +1,7 @@
 import React from 'react'
+import image from '../../assets/Blogs/HeroImage.jpg'
+import paralegal from '../../assets/Blogs/HeroImagecopy.jpg'
+import fight from '../../assets/Blogs/MeetingImage.jpg'
 
 const Blog = () => {
 return (
@@ -17,7 +20,7 @@ return (
             style={{ padding: '40px' }}
         >
             <img
-                src='././src/assets/Blogs/HeroImage.jpg'
+                src= {image}
                 alt='Paralegal'
                 className='w-full md:w-24 h-24 object-cover rounded'
             />
@@ -37,7 +40,7 @@ return (
             style={{ padding: '50px' }}
         >
             <img
-                src='././src/assets/Blogs/HeroImage.jpg'
+                src= {paralegal}
                 alt='Paralegal'
                 className='w-full md:w-24 h-24 object-cover rounded'
             />
@@ -61,7 +64,7 @@ return (
             }}
         >
             <img
-                src='././src/assets/Blogs/HeroImage.webp'
+                src= {fight}
                 alt='Traffic Ticket'
                 className='w-full md:w-1/3 rounded-lg object-cover'
             />
