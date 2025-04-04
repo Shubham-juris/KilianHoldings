@@ -1,4 +1,3 @@
-
 import React from "react";
 import AccountImg from "../../assets/AccountingBook/accountBook.jpg";
 import RecordImg from "../../assets/AccountingBook/recordKeep.jpg";
@@ -6,7 +5,6 @@ import FinancialImg from "../../assets/AccountingBook/finance_report.jpg";
 import BudgetingImg from "../../assets/AccountingBook/analysis.jpg";
 import TaxImg from "../../assets/AccountingBook/online-tax.jpg";
 import FinancialAnalysisImg from "../../assets/AccountingBook/forecasting.jpg";
-
 
 function AccountBook() {
   return (
