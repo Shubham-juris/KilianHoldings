@@ -1,3 +1,8 @@
+import React from 'react';
+
+import StockMarketImage from '../../assets/stockmarket/stock-market-img.avif';
+import InvestStocks from '../../assets/stockmarket/stockMarketContainer2.jpg';
+import StockMarketImage1 from '../../assets/stockmarket/stockMarketcontainer1.jpg';
 export default function StockMarket() {
   return (
     <div style={{ margin: '0 auto' }} className='text-white'>
@@ -13,11 +18,11 @@ export default function StockMarket() {
         <div className='md:w-1/2 text-center md:text-left'>
           <h2
             className='text-3xl md:text-5xl font-bold'
-            style={{ marginBottom: '2rem', color: 'green' }}
+            style={{ marginBottom: '2rem', color: '#000808' }}
           >
             Welcome to Kilian Holdings Ltd - Your Gateway to the Stock Market
           </h2>
-          <p className='mt-4 text-lg text-gray-700'>
+          <p className='mt-4 text-lg text-[#000808]'>
             At Kilian Holdings Ltd, we understand that the stock market can be
             both an exciting and daunting place. Whether you are a seasoned
             investor or just starting your financial journey, we are here to
@@ -27,7 +32,7 @@ export default function StockMarket() {
         </div>
         <div className='md:w-1/2 flex justify-center'>
           <img
-            src='../src/assets/stockmarket/stock-market-img.avif'
+            src= {StockMarketImage}
             alt='Stock Market'
             className='w-full max-w-md h-auto rounded-lg shadow-lg'
             style={{ maxHeight: '90vh', width: '100%' }}
@@ -44,7 +49,7 @@ export default function StockMarket() {
         <div className='flex flex-col md:flex-row gap-6 items-stretch'>
           <div className='md:w-1/2 flex flex-col items-center text-center md:text-left'>
             <img
-              src='../src/assets/stockmarket/stockMarketcontainer1.jpg'
+              src= {StockMarketImage1}
               alt='content'
               className='w-full h-64 object-cover rounded-lg shadow-lg'
             />
@@ -71,7 +76,7 @@ export default function StockMarket() {
           </div>
           <div className='md:w-1/2 flex flex-col items-center text-center md:text-left'>
             <img
-              src='../src/assets/stockmarket/stockMarketContainer2.jpg'
+              src= {InvestStocks}
               alt='content'
               className='w-full h-64 object-cover rounded-lg shadow-lg'
             />
