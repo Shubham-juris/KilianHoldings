@@ -1,5 +1,14 @@
-// import accountBookImg from "../../assets/AccountingBook/accountBook.jpg"; 
-function Account_Book() {
+
+import React from "react";
+import AccountImg from "../../assets/AccountingBook/accountBook.jpg";
+import RecordImg from "../../assets/AccountingBook/record.jpg";
+import FinancialImg from "../../assets/AccountingBook/financial.jpg";
+import BudgetingImg from "../../assets/AccountingBook/budgeting.jpg";
+import TaxImg from "../../assets/AccountingBook/tax.jpg";
+import FinancialAnalysisImg from "../../assets/AccountingBook/financialAnalysis.jpg";
+
+
+function AccountBook() {
   return (
     <>      {/* upper part */}
       <div
@@ -60,7 +69,7 @@ function Account_Book() {
           >
             <img
               className="w-full"
-              src="../../src/assets/AccountingBook/accountBook.jpg"
+              src= {AccountImg}
               alt="accountImg"
             />
           </div>
@@ -92,7 +101,7 @@ function Account_Book() {
               <h1 className="text-2xl text-center">Record-Keeping</h1>
               <img
                 className="w-full object-cover"
-                src="../../src/assets/AccountingBook/recordKeep.jpg"
+                src= {RecordImg}
                 style={{ marginTop: "1.8rem", height: "210px" }}
               />
               <p
@@ -113,7 +122,7 @@ function Account_Book() {
               <h1 className="text-2xl text-center">Financial Reporting</h1>
               <img
                 className="w-full object-cover"
-                src="../../src/assets/AccountingBook/finance_report.jpg"
+                src= {FinancialImg}
                 style={{ marginTop: "1.8rem", height: "210px" }}
               />
               <p
@@ -138,7 +147,7 @@ function Account_Book() {
               </h1>
               <img
                 className="w-full object-cover"
-                src="../../src/assets/AccountingBook/forecasting.jpg"
+                src= {BudgetingImg}
                 style={{ marginTop: "1.8rem", height: "210px" }}
               />
               <p
@@ -165,7 +174,7 @@ function Account_Book() {
               <h1 className="text-2xl text-center">Tax Compliance</h1>
               <img
                 className="w-full object-cover"
-                src="../../src/assets/AccountingBook/online-tax.jpg"
+                src= {TaxImg}
                 style={{ marginTop: "1.8rem", height: "210px" }}
               />
               <p
@@ -187,7 +196,7 @@ function Account_Book() {
               <h1 className="text-2xl text-center">Financial Analysis</h1>
               <img
                 className="w-full object-cover"
-                src="../../src/assets/AccountingBook/analysis.jpg"
+                src= {FinancialAnalysisImg}
                 style={{ marginTop: "1.8rem", height: "210px" }}
               />
               <p
@@ -209,4 +218,4 @@ function Account_Book() {
 
 }
 
-export default  Account_Book;
+export default  AccountBook;
