@@ -132,7 +132,7 @@ const Services = () => {
               className='w-full h-48 object-cover mb-4'
               style={{ marginBottom: '32px' }}
             />
-            <p className='text-gray-700 text-base '>{service.description}</p>
+            <p className='text-gray-700 text-justify '>{service.description}</p>
           </div>
         ))}
       </div>

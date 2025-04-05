@@ -103,7 +103,7 @@ function AccountBook() {
                 style={{ marginTop: "1.8rem", height: "210px" }}
               />
               <p
-                className="text-center"
+                className=" text-justify"
                 style={{ padding: "1.5rem 1rem" }}
               >
                 Accountants and bookkeepers maintain detailed records of all
@@ -124,7 +124,7 @@ function AccountBook() {
                 style={{ marginTop: "1.8rem", height: "210px" }}
               />
               <p
-                className="text-center"
+                className=" text-justify"
                 style={{ padding: "1.5rem 1rem" }}
               >
                 Through the preparation of financial statements such as balance
@@ -149,12 +149,12 @@ function AccountBook() {
                 style={{ marginTop: "1.8rem", height: "210px" }}
               />
               <p
-                className="text-center"
+                className=" text-justify"
                 style={{ padding: "1.5rem 1rem" }}
               >
                 Accounting and bookkeeping professionals assist businesses in
                 creating budgets and financial forecasts to plan and manage
-                finances effectively. By analyzing historical data and
+                finances effectively.By analyzing historical data and
                 projecting future revenues and expenses, companies can set
                 realistic financial goals and allocate resources efficiently.
               </p>
@@ -176,7 +176,7 @@ function AccountBook() {
                 style={{ marginTop: "1.8rem", height: "210px" }}
               />
               <p
-                className="text-center"
+                className=" text-justify"
                 style={{ padding: "1.5rem 1rem" }}
               >
                 Tax preparation is a crucial aspect of accounting and
@@ -198,7 +198,7 @@ function AccountBook() {
                 style={{ marginTop: "1.8rem", height: "210px" }}
               />
               <p
-                className="text-center"
+                className=" text-justify"
                 style={{ padding: "1.5rem 1rem" }}
               >
                 Accountants and bookkeepers analyze financial data to assess
