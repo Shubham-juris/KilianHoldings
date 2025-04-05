@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className='flex relative justify-between items-center w-full h-[150px] px-4 sm:px-6 md:px-8 lg:px-12'>
           <div className='flex items-center relative left-3'>
             <button
-              className='rounded-lg w-7 sm:w-8 md:w-9'
+              className='rounded-lg w-7 sm:w-8 md:w-9 z-1'
               onClick={() => setIsOpen(true)}
             >
               <img src={img} alt='menu' />
@@ -67,12 +67,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li style={{marginBottom: "25px"}}>
-              <a
-                href='/services'
+              <Link
+                to='/services'
+                onClick={() => setIsOpen(false)}
                 className='flex items-center p-2 text-[#0C3F40] rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700'
               >
                 <span className='ml-3'>SERVICES</span>
-              </a>
+              </Link>
             </li>
             <li style={{marginBottom: "25px"}}>
               <Link
@@ -92,25 +93,28 @@ const Navbar = () => {
                 <span className='ml-3'>STOCK MARKET</span>
               </Link>
             </li>
-            <li style={{marginBottom: "25px"}}>
-              <a
-                href=''
+            {/* <li style={{marginBottom: "25px"}}>
+              <Link
+                to='/bookconsultion'
+                onClick={() => setIsOpen(false)}
                 className='flex items-center p-2 text-[#0C3F40] rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700'
               >
                 <span className='ml-3'>BOOK A CONSULTATION</span>
-              </a>
-            </li>
+              </Link>
+            </li> */}
             <li style={{marginBottom: "25px"}}>
-              <a
-                href='/clintportal'
+              <Link
+                to='/clintportal'
+                onClick={() => setIsOpen(false)}
                 className='flex items-center p-2 text-[#0C3F40] rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700'
               >
                 <span className='ml-3'>CLINT PORTAL</span>
-              </a>
+              </Link>
             </li>
             <li style={{marginBottom: "25px"}}>
               <Link
                 to='/careers'
+                onClick={() => setIsOpen(false)}
                 className='flex items-center p-2 text-[#0C3F40] rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700'
               >
                 <span className='ml-3'>CAREERS</span>
@@ -126,12 +130,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li style={{marginBottom: "25px"}}>
-              <a
-                href='/Blogs'
+              <Link
+                  onClick={() => setIsOpen(false)}
+                to='/Blogs'
                 className='flex items-center p-2 text-[#0C3F40] rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700'
               >
                 <span className='ml-3'>BLOGS</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

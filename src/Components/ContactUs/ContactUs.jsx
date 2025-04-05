@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { TextField, Button, Typography, Box } from "@mui/material";
+import { FaChevronCircleDown } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
 
 const MainContactUs = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -13,19 +15,28 @@ const MainContactUs = () => {
     console.log("Form Data Submitted:", formData);
   };
 
+  const [isOpen, setIsOpen] = useState(false)
+
+  const open = () => {
+    if(!isOpen){
+setIsOpen(true)
+    }else{
+setIsOpen(false)
+    }
+  }
+
   return (
     <Box sx={{ mt: "5rem", p: 4, maxWidth: 1200, mx: "auto", textAlign: "center" }}>
       <Box
         sx={{ display: "flex", alignItems: "center", justifyContent: "center", mb: 2 }}
       >
-        <Box sx={{ flexGrow: 1, height: "2px", bgcolor: "#8B8B5E" }} />
         <Typography
           variant="h4"
-          sx={{ fontWeight: "bold", color: "#8B8B5E", mx: 2, textAlign: "center" }}
-        >
+          sx={{ fontWeight: "bold", color: "#0C3F40", mx: 2, textAlign: "center" }}>
+
           CONTACT US
         </Typography>
-        <Box sx={{ flexGrow: 1, height: "2px", bgcolor: "#8B8B5E" }} />
+
       </Box>
 
       {/* Main Content */}
@@ -72,8 +83,7 @@ const MainContactUs = () => {
                 fullWidth
                 sx={{
                   mt: 2,
-                  backgroundColor: "#d4d19c",
-                  color: "black",
+                  backgroundColor: "#0C3F40",
                   fontWeight: "bold",
                   borderRadius: "20px",
                 }}
@@ -85,8 +95,8 @@ const MainContactUs = () => {
           </Box>
         </Box>
 
-       
-        <Box sx={{ flex: 1, textAlign: "left", p: 4, minWidth:"270px", position:"relative" , right:"24px" }}>
+
+        <Box sx={{ flex: 1, textAlign: "left", p: 4, minWidth: "270px", position: "relative", right: "24px" }}>
           <Typography variant="h6" sx={{ color: "#000" }}>
             Better yet, see us in person!
           </Typography>
@@ -114,9 +124,29 @@ const MainContactUs = () => {
           <Typography variant="body2">
             Email: kilianholdingltd@gmail.com
           </Typography>
-          <Typography variant="h6" sx={{ mt: 2, fontWeight: "bold" }}>
+          {/* <Typography variant="h6" sx={{ mt: 2, fontWeight: "bold" }}>
             Hours
           </Typography>
+          <Typography variant="body2">
+          09:00 a.m. – 05:00 p.m.
+          </Typography> */}
+            <div className="flex">
+              <p className="text-[1.5em] relative top-3"><b>Hours</b></p>
+              <FaChevronCircleDown className="relative top-6.5 left-2 text-[0.9em]" onClick={open} />
+            </div>
+          {isOpen && (
+            <div style={{marginTop:'20px'}} className="text-[#0C3F40]">
+              <span>Sunday 09:00 a.m. – 05:00 p.m.</span><br />
+              <span>Monday 09:00 a.m. – 05:00 p.m.</span><br />
+              <span>Tuesday 09:00 a.m. – 05:00 p.m.</span><br />
+              <span>Wednesday 09:00 a.m. – 05:00 p.m.</span><br />
+              <span>Thursday 09:00 a.m. – 05:00 p.m.</span><br />
+              <span>Friday 09:00 a.m. – 05:00 p.m.</span><br />
+              <span>Saturday 09:00 a.m. – 05:00 p.m.</span>
+          
+            </div>)}
+
+
         </Box>
       </Box>
 
