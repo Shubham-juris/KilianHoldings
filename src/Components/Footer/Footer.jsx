@@ -94,32 +94,28 @@ const Footer = () => {
           </Typography>
           <Box sx={{ display: "flex", justifyContent: { xs: "flex-start", md: "center" }, gap: 2 }}>
             <IconButton
-              href="https://facebook.com"
+              href="https://www.facebook.com/kilianholdings/"
               target="_blank"
               sx={{ color: "#3b5998", "&:hover": { transform: "scale(1.2)" } }}
             >
               <FacebookIcon />
             </IconButton>
-            <IconButton
-              href="https://twitter.com"
-              target="_blank"
-              sx={{ color: "#00acee", "&:hover": { transform: "scale(1.2)" } }}
-            >
-              <TwitterIcon />
+            
+              
             </IconButton>
             <IconButton
               href="https://linkedin.com"
               target="_blank"
               sx={{ color: "#0072b1", "&:hover": { transform: "scale(1.2)" } }}
             >
-              <LinkedInIcon />
+            
             </IconButton>
             <IconButton
               href="https://instagram.com"
               target="_blank"
               sx={{ color: "#e1306c", "&:hover": { transform: "scale(1.2)" } }}
             >
-              <InstagramIcon />
+            
             </IconButton>
           </Box>
         </Box>
