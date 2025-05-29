@@ -102,21 +102,7 @@ const Footer = () => {
             </IconButton>
             
               
-            </IconButton>
-            <IconButton
-              href="https://linkedin.com"
-              target="_blank"
-              sx={{ color: "#0072b1", "&:hover": { transform: "scale(1.2)" } }}
-            >
-            
-            </IconButton>
-            <IconButton
-              href="https://instagram.com"
-              target="_blank"
-              sx={{ color: "#e1306c", "&:hover": { transform: "scale(1.2)" } }}
-            >
-            
-            </IconButton>
+
           </Box>
         </Box>
       </Box>
