@@ -125,7 +125,7 @@ const AboutUs = () => {
           here to help you navigate the intricacies of the process.
         </p>
         <button  style={{padding: "15px 0px 10px 0px"}} className="text-sm font-semibold text-gray-900 underline hover:text-teal-700 transition">
-          FIND OUT MORE
+          
         </button>
       </div>
     </div>
