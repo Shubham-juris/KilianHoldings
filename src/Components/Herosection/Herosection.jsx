@@ -68,7 +68,7 @@ const Herosection = () => {
               },
             }}
           >
-            LEARN MORE
+            
           </Button>
         </Box>
       </Box>
