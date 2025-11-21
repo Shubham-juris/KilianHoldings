@@ -8,7 +8,7 @@ const Herosection = () => {
         .notice-slider-red {
           overflow: hidden;
           background:#0C3F40;
-          color: red;
+          color: yellow;
           padding: 8px 0;
         }
         .notice-text {
