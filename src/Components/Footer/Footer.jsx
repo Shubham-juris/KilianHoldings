@@ -33,10 +33,12 @@ const Footer = () => {
             Kilian Holdings Ltd.
           </Typography>
           <Typography variant="body2" sx={{ mb: 1 }}>
-          At Kilian Holdings, our mission is to provide exceptional paralegal services focused on meticulous documentation assistance.
+            At Kilian Holdings, our mission is to provide exceptional paralegal
+            services focused on meticulous documentation assistance.
           </Typography>
           <Typography variant="body2">
-            © {new Date().getFullYear()} Kilian Holdings Ltd. All rights reserved.
+            © {new Date().getFullYear()} Kilian Holdings Ltd. All rights
+            reserved.
           </Typography>
         </Box>
 
@@ -88,11 +90,17 @@ const Footer = () => {
         </Box>
 
         {/* Social Media */}
-        <Box sx={{ flex: 1, textAlign: { xs: "left", md: "center" } }}> 
+        <Box sx={{ flex: 1, textAlign: { xs: "left", md: "center" } }}>
           <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2 }}>
             Follow Us
           </Typography>
-          <Box sx={{ display: "flex", justifyContent: { xs: "flex-start", md: "center" }, gap: 2 }}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: { xs: "flex-start", md: "center" },
+              gap: 2,
+            }}
+          >
             <IconButton
               href="https://www.facebook.com/kilianholdings/"
               target="_blank"
@@ -100,9 +108,13 @@ const Footer = () => {
             >
               <FacebookIcon />
             </IconButton>
-            
-              
-
+            <IconButton
+              href="https://www.instagram.com/@kili.anholdingltd03/"
+              target="_blank"
+              sx={{ color: "#E4405F", "&:hover": { transform: "scale(1.2)" } }}
+            >
+              <InstagramIcon />
+            </IconButton>
           </Box>
         </Box>
       </Box>
@@ -112,11 +124,25 @@ const Footer = () => {
       <Box sx={{ textAlign: "center", fontSize: "0.875rem", color: "#757575" }}>
         <Typography variant="body2">
           Powered by Office Based Jobs |{" "}
-          <Link href="#" sx={{ color: "#0C3F40", textDecoration: "none", "&:hover": { color: "#1976d2" } }}>
+          <Link
+            href="#"
+            sx={{
+              color: "#0C3F40",
+              textDecoration: "none",
+              "&:hover": { color: "#1976d2" },
+            }}
+          >
             Terms of Service
           </Link>{" "}
           |{" "}
-          <Link href="#" sx={{ color: "#0C3F40", textDecoration: "none", "&:hover": { color: "#1976d2" } }}>
+          <Link
+            href="#"
+            sx={{
+              color: "#0C3F40",
+              textDecoration: "none",
+              "&:hover": { color: "#1976d2" },
+            }}
+          >
             Privacy Policy
           </Link>
         </Typography>
