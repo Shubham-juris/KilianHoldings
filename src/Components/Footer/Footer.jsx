@@ -98,7 +98,7 @@ const Footer = () => {
             sx={{
               display: "flex",
               justifyContent: { xs: "flex-start", md: "center" },
-              gap: 2,
+              gap : 2,
             }}
           >
             <IconButton
@@ -109,7 +109,7 @@ const Footer = () => {
               <FacebookIcon />
             </IconButton>
             <IconButton
-              href="https://www.instagram.com/@kili.anholdingltd03/"
+              href="https://www.instagram.com/kili.anholdingltd03/"
               target="_blank"
               sx={{ color: "#E4405F", "&:hover": { transform: "scale(1.2)" } }}
             >
