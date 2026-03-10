@@ -4,6 +4,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import XIcon from "@mui/icons-material/X";
 
 const Footer = () => {
   return (
@@ -109,11 +110,18 @@ const Footer = () => {
               <FacebookIcon />
             </IconButton>
             <IconButton
-              href="https://www.instagram.com/kili.anholdingltd03/"
+              href="https://www.instagram.com/kilian22299/"
               target="_blank"
               sx={{ color: "#E4405F", "&:hover": { transform: "scale(1.2)" } }}
             >
               <InstagramIcon />
+            </IconButton>
+            <IconButton
+              href="https://x.com/Kilian_holding"
+              target="_blank"
+              sx={{ color: "#000000", "&:hover": { transform: "scale(1.2)" } }}
+            >
+              <XIcon />
             </IconButton>
           </Box>
         </Box>
