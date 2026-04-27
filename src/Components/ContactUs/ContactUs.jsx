@@ -119,6 +119,9 @@ setIsOpen(false)
             5009D, 51Street, Barhead, T7N 1L1
           </Typography>
           <Typography variant="body2">
+            1835 Albert street, Regina, Saskatchewan, S4P 2S9 Canada 
+          </Typography>
+          <Typography variant="body2">
             Toll free number: 1-833-215-9686
           </Typography>
           <Typography variant="body2">
