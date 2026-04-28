@@ -20,8 +20,8 @@ const TopHeader = () => {
           textAlign: 'center',
         }}
       >
-        We extend our services to Innisfail, Drayton Valley, Slave Lake, and
-        Barrhead.
+        We extend our services to Innisfail, Drayton Valley, Slave Lake,
+        Barrhead and Regina
       </Typography>
     </Box>
   );
