@@ -77,7 +77,6 @@ const Footer = () => {
         </Box>
 
         {/* Contact Info */}
-        /* Contact Info */}
 <Box sx={{ flex: 1 }}>
   <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2 }}>
     Contact Us
