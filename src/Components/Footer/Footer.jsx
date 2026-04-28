@@ -77,7 +77,59 @@ const Footer = () => {
         </Box>
 
         {/* Contact Info */}
-        <Box sx={{ flex: 1 }}>
+        /* Contact Info */}
+<Box sx={{ flex: 1 }}>
+  <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2 }}>
+    Contact Us
+  </Typography>
+
+  {/* Office Locations */}
+            <Box
+              sx={{
+                mb: 3,
+                p: 2,
+                border: "1px solid #e0e0e0",
+                borderRadius: 3,
+                backgroundColor: "#f9fbfb",
+              }}
+            >
+              {[
+                "4804 42 Ave, Innisfail, Alberta T4G 1N4, Canada",
+                "#3 5105 51 Ave, Drayton Valley, Alberta T7A 0C3",
+                "Unit 215, 321 Main Street Northeast, Slave Lake, Alberta T0G 2A0",
+                "5009D, 51 Street, Barrhead, Alberta T7N 1L1",
+                "1835 Albert Street, Regina, Saskatchewan S4P 2S9, Canada",
+              ].map((address, index, array) => (
+                <Box key={index}>
+                  <Typography
+                    variant="body2"
+                    sx={{
+                      lineHeight: 1.8,
+                      color: "#0C3F40",
+                      py: 1,
+                    }}
+                  >
+                    {address}
+                  </Typography>
+                  {index < array.length - 1 && (
+                    <Divider sx={{ borderColor: "#d9e3e3" }} />
+                  )}
+                </Box>
+              ))}
+            </Box>
+
+            {/* Contact Details */}
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              Email: kilianholdingltd@gmail.com
+            </Typography>
+            <Typography variant="body2" sx={{ mb: 1 }}>
+              Phone: +1 780-360-7434
+            </Typography>
+            <Typography variant="body2">
+              Mon - Fri: 9:00 AM - 5:00 PM
+            </Typography>
+          </Box>
+        {/* <Box sx={{ flex: 1 }}>
           <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2 }}>
             Contact Us
           </Typography>
@@ -88,7 +140,7 @@ const Footer = () => {
             Phone: +1 780-360-7434
           </Typography>
           <Typography variant="body2">Mon - Fri: 9:00 AM - 5:00 PM</Typography>
-        </Box>
+        </Box> */}
 
         {/* Social Media */}
         <Box sx={{ flex: 1, textAlign: { xs: "left", md: "center" } }}>
