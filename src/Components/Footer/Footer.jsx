@@ -86,7 +86,6 @@ const Footer = () => {
             <Box
               sx={{
                 mb: 3,
-                p: 2,
                 borderRadius: 3,
               }}
             >
